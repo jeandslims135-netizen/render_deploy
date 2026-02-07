@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 import dash_bootstrap_components as dbc
 
-df = pd.read_csv('curso pandas/dados_dash.csv')
+df = pd.read_csv('dados_dash.csv')
 
 def apply_demographic_filters(data, sex, race, age, education):
     mask = pd.Series(True, index = data.index)
